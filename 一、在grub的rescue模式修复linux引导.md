@@ -33,7 +33,7 @@ grub rescue> normal
 
 如下图可看出efi挂载点是：/dev/sda1
 
-![截图1](/home/hany/桌面/github/截图1.png)
+![image](https://github.com/zjkhy94/manjaro-linux-/blob/main/images/image1.png)
 
 2.重新安装grub
 
