@@ -234,7 +234,7 @@ yay -S todesk
 
 到todesk官网下载（Debian、Ubuntu（x64）版本）
 
-![image2](/home/hany/桌面/github/image2.png)
+![image2](https://github.com/zjkhy94/manjaro-linux-zjkhy94/blob/main/images/image2.png)
 
 然后使用软件9的方法安装，例如：
 
