@@ -280,4 +280,4 @@ screenfetch
 
 效果如下：
 
-![image3](/home/hany/桌面/github/image3.png)
+![image3](https://github.com/zjkhy94/manjaro-linux-zjkhy94/blob/main/images/image3.png)
