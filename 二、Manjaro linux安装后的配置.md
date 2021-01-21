@@ -281,3 +281,12 @@ screenfetch
 效果如下：
 
 ![image3](https://github.com/zjkhy94/manjaro-linux-zjkhy94/blob/main/images/image3.png)
+
+###### 15.安装Deepin-wechat、Deepin-TIM
+
+```
+yay -S com.qq.weixin.spark******(Deepin-wechat)
+yay -S com.qq.tim.spark******(Deepin-tim)
+```
+
+
