@@ -2,7 +2,8 @@
 
 问题描述：
 
-关机前安装了video-vesa驱动后，开机黑屏，如图所示。![image4](/home/hany/Desktop/github/images/image4.png)
+关机前安装了video-vesa驱动后，开机黑屏，如图所示。
+![image4](https://github.com/zjkhy94/manjaro-linux-zjkhy94/blob/main/images/image4.png)
 
 问题解决：
 
