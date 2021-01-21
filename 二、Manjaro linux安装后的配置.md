@@ -242,3 +242,42 @@ yay -S todesk
 (1)sudo debtap todesk.deb
 (2)sudo pacman -U todesk.tar.xz
 ```
+###### 11、安装网易云音乐
+
+```
+sudo pacman -S netease-cloud-music
+```
+
+###### 12、安装Foxit
+
+```
+yaourt foxit
+```
+
+###### 13、安装filezilla 
+
+```
+sudo pacman -S filezilla
+```
+
+###### 14、安装screenfetch (在终端里输出你的系统logo和状态)
+
+```
+pacman -S screenfetch
+```
+
+要让screenfetch在打开终端是自动输出:
+
+```
+vim ~/.bashrc
+```
+
+然后在最后添加：
+
+```
+screenfetch
+```
+
+效果如下：
+
+![image3](/home/hany/桌面/github/image3.png)
