@@ -4,7 +4,7 @@
 
 可以使用DiskGenius，也可以使用Windows的磁盘管理。
 
-![image5](/home/hany/Desktop/github/images/image5.png)
+![image5](https://github.com/zjkhy94/manjaro-linux-zjkhy94/blob/main/images/image5.png)
 
 ## 2.制作启动U盘
 
@@ -22,7 +22,7 @@ U盘启动后检查网络环境。
 
 ###### (1)有线连接，例如：
 
-![image6](/home/hany/Desktop/github/images/image6.png)
+![image6](https://github.com/zjkhy94/manjaro-linux-zjkhy94/blob/main/images/image6.png)
 
 ###### (2)无线连接，方法：
 
@@ -39,7 +39,7 @@ U盘启动后检查网络环境。
 
 无线连接，例如：
 
-![image7](/home/hany/Desktop/github/images/image7.png)
+![image7](https://github.com/zjkhy94/manjaro-linux-zjkhy94/blob/main/images/image7.png)
 
 无线连接成功之后继续输入下面命令
 
@@ -160,7 +160,7 @@ sdb      8:16   0 931.5G  0 disk
 /swapfile none swap defaults 0 0   （是数字0而不是字母o）
 ```
 
-![image8](/home/hany/Desktop/github/images/image8.png)
+![image8](https://github.com/zjkhy94/manjaro-linux-zjkhy94/blob/main/images/image8.png)
 
 ```bash
 [root@archiso]# ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime		设置时区
@@ -177,7 +177,7 @@ sdb      8:16   0 931.5G  0 disk
 
 在locale.conf文件中填写 LANG=en_US.UTF-8 保存退出
 
-![image10](/home/hany/Desktop/github/images/image10.png)
+![image10](https://github.com/zjkhy94/manjaro-linux-zjkhy94/blob/main/images/image10.png)
 
 ```bash
 [root@archiso]# nano /etc/hostname		创建并写入hostname,其中hostname根据自己喜好填
@@ -186,7 +186,7 @@ sdb      8:16   0 931.5G  0 disk
 
 hosts文件修改内容如下图，保存退出
 
-![image9](/home/hany/Desktop/github/images/image9.png)
+![image9](https://github.com/zjkhy94/manjaro-linux-zjkhy94/blob/main/images/image9.png)
 
 
 
