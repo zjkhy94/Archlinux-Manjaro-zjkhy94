@@ -1,1 +1,1 @@
-个人安装manjaro后遇到的问题及解决
+关于安装Archlinux和Manjaro的问题和解决
