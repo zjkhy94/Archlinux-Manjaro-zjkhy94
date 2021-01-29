@@ -288,5 +288,14 @@ screenfetch
 yay -S com.qq.weixin.spark******(Deepin-wechat)
 yay -S com.qq.tim.spark******(Deepin-tim)
 ```
+###### 16.字体安装（Windows字体）
 
+```
+sudo cp * /usr/share/fonts
+sudo mkfontscale
+sudo mkfontdir
+sudo fc-cache
+```
+
+也可以用自带的字体管理安装。
 
