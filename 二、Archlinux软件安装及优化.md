@@ -317,7 +317,7 @@ export XMODIFIERS="@im=fcitx"
 
 如图:
 
-![image11](/home/hany/Desktop/github/images/image11.png)
+![image11](https://github.com/zjkhy94/Archlinux-Manjaro-zjkhy94/blob/main/images/image11.png)
 
 (2)修改deepin-wechat字体
 
@@ -329,13 +329,13 @@ export XMODIFIERS="@im=fcitx"
 WINEPREFIX=~/.deepinwine/Spark-WeChat deepin-wine5 winecfg
 ```
 
-![image12](/home/hany/Desktop/github/images/image12.png)
+![image12](https://github.com/zjkhy94/Archlinux-Manjaro-zjkhy94/blob/main/images/image12.png)
 
 打开“显示”，可知用的是“Tahoma”字体。
 
 到/home/***/.deepinwine/Spark-WeChat目录下找到system.reg文件，用wps或者其他软件打开，然后搜索“Tahoma”，下面是修改成“PingFang SC”
 
-![image13](/home/hany/Desktop/github/images/image13.png)
+![image13](https://github.com/zjkhy94/Archlinux-Manjaro-zjkhy94/blob/main/images/image13.png)
 
 然后到deepin-wechat注册表修改。
 
@@ -349,6 +349,6 @@ WINEPREFIX=~/.deepinwine/Spark-WeChat deepin-wine5 regedit
 
 修改如图位置的字体：
 
-![image14](/home/hany/Desktop/github/images/image14.png)![image15](/home/hany/Desktop/github/images/image15.png)
+![image14](https://github.com/zjkhy94/Archlinux-Manjaro-zjkhy94/blob/main/images/image14.png)![image15](https://github.com/zjkhy94/Archlinux-Manjaro-zjkhy94/blob/main/images/image15.png)
 
 最后重新启动微信。
