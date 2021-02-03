@@ -274,6 +274,92 @@ sudo timeshift --restore --snapshot '2021-02-02_10-00-01' --skip-grub
 
 进入Live系统后打开 **Timeshift** 软件进行还原。
 
+###### 17.vscode安装与配置
+
+```
+sudo pacman -S visual-studio-code-bin
+```
+
+[1].安装必要的插件
+
+- C/C++
+- Code Runner
+- Chinese (Simplified) Language Pack for Visual Studio Code
+
+[2].配置调试环境
+
+**launch.json**
+
+```
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C/C++",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "compile",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
+```
+
+**tasks.json**
+
+```
+{
+    "version": "2.0.0",
+    "tasks": [{
+            "label": "compile",
+            "command": "g++",		//如果需要是c语言也就是gcc将下面的command项由g++改为gcc
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
+```
+
+[3].去除窗口标题框
+
+在 Vscode 设置中找到 `Title Bar Style`，将值改为 `custom`
+
 ### (二)遇到的问题及解决
 
 ###### 1.开启蓝牙
@@ -300,7 +386,6 @@ sudo pacman -S pulseaudio-bluetooth
 ```shell
 sudo pacman -S wqy-microhei wqy-bitmapfont wqy-zenhei wqy-microhei-lite
 sudo pacman -S adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
-12
 ```
 
 西文字体推荐使用dejavu、noto字体。
