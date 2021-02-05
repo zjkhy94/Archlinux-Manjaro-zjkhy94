@@ -516,7 +516,7 @@ GRUB_SAVEDEFAULT=true
 注释掉：
 
 ```
-GRUB_DEFAULT=0
+GRUB_DEFAULT=0			//前面添加#
 ```
 
 ![image16](https://github.com/zjkhy94/Archlinux-Manjaro-zjkhy94/blob/main/images/image16.png)
