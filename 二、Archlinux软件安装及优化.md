@@ -519,6 +519,8 @@ GRUB_SAVEDEFAULT=true
 GRUB_DEFAULT=0			//前面添加#
 ```
 
+保存后退出。
+
 ![image16](https://github.com/zjkhy94/Archlinux-Manjaro-zjkhy94/blob/main/images/image16.png)
 
 最后更新grub
