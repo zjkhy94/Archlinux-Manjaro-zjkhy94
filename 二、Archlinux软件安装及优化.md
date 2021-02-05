@@ -495,3 +495,35 @@ WINEPREFIX=~/.deepinwine/Spark-WeChat deepin-wine5 regedit
 ![image14](https://github.com/zjkhy94/Archlinux-Manjaro-zjkhy94/blob/main/images/image14.png)![image15](https://github.com/zjkhy94/Archlinux-Manjaro-zjkhy94/blob/main/images/image15.png)
 
 最后重新启动微信。
+
+###### 4.让grub记住上次启动的启动项
+
+为了让grub记住archlinux与Windows双系统记住上次从哪个系统启动的。
+
+打开grub文件：
+
+```
+sudo vim /etc/default/grub
+```
+
+在末尾添加：
+
+```
+GRUB_DEFAULT=saved
+GRUB_SAVEDEFAULT=true
+```
+
+注释掉：
+
+```
+GRUB_DEFAULT=0
+```
+
+![image16](https://github.com/zjkhy94/Archlinux-Manjaro-zjkhy94/blob/main/images/image16.png)
+
+最后更新grub
+
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
