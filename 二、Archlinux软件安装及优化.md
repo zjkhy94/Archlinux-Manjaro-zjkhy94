@@ -528,3 +528,9 @@ GRUB_DEFAULT=0			前面添加#
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+### (三)美化
+
+1.全局主题
+
+Layan look and feel theme,作者 Vince
+
