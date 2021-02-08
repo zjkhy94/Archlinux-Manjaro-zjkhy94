@@ -103,7 +103,8 @@ yay -S baidunetdisk-bin
 ###### 7、安装wps
 
 ```
-sudo pacman -S wps-office ttf-wps-fonts
+yay -S wps-office-cn 
+yay -S wps-office-mui-zh-cn
 ```
 
 ###### 8、安装debtap
@@ -180,13 +181,13 @@ yaourt foxit
 sudo pacman -S filezilla
 ```
 
-###### 13、安装screenfetch (在终端里输出你的系统logo和状态)
+###### 13、安装neofetch  (在终端里输出你的系统logo和状态)
 
 ```
-pacman -S screenfetch
+pacman -S neofetch 
 ```
 
-要让screenfetch在打开终端是自动输出:
+要让neofetch在打开终端是自动输出:
 
 ```
 vim ~/.bashrc
@@ -195,7 +196,7 @@ vim ~/.bashrc
 然后在最后添加：
 
 ```
-screenfetch
+neofetch
 ```
 
 ###### 14.安装Deepin-wechat、Deepin-TIM
@@ -208,7 +209,7 @@ yay -S com.qq.tim.spark******(Deepin-tim)
 ###### 15.字体安装（Windows字体）
 
 ```
-sudo cp * /usr/share/fonts
+cp * /usr/share/fonts
 sudo mkfontscale
 sudo mkfontdir
 sudo fc-cache
