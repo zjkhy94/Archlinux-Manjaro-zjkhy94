@@ -528,6 +528,12 @@ GRUB_DEFAULT=0			前面添加#
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+5.Arch Linux下韩文重叠显示
+
+```
+yay -S wqy-microhei-kr-patched
+```
+
 ### (三)美化
 
 1.全局主题
