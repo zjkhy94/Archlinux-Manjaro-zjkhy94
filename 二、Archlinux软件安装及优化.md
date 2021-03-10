@@ -446,7 +446,7 @@ vim ~/.config/fontconfig/fonts.conf
 - 打开终端cd 进入deepin-wine的运行脚本目录
 
 ```
-sudo cd /opt/deepinwine/tools/
+cd /opt/deepinwine/tools/
 sudo chmod 777 run.sh  #修改权限
 sudo vim run.sh   #编辑脚本
 ```
@@ -528,15 +528,53 @@ GRUB_DEFAULT=0			前面添加#
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-5.Arch Linux下韩文重叠显示
+###### 5.Arch Linux下韩文重叠显示
 
 ```
 yay -S wqy-microhei-kr-patched
 ```
 
-### (三)美化
+###### 6.todesk出现如下问题
 
-1.全局主题
+![image17](https://github.com/zjkhy94/Archlinux-Manjaro-zjkhy94/blob/main/images/image17.jpg)
 
-Layan look and feel theme,作者 Vince
+```
+sudo systemctl stop todeskd.service			关闭todesk服务
+cd /opt/todesk/config/todeskd.conf			进入todesk的config文件夹
+sudo rm -f todesk.conf						删除todesk.conf
+sudo systemctl start todeskd.service		重新启动服务
+```
 
+### (三)终端美化
+
+1.安装curl、git、wget
+
+```
+sudo pacman -S curl git wget		
+```
+
+2.设置网络代理（ip和端口按照实际情况填写）
+
+```
+export https_proxy=http://127.0.0.1:8889 http_proxy=http://127.0.0.1:8889 all_proxy=socks5://127.0.0.1:1089		
+```
+
+3.安装zsh
+
+```
+sudo pacman -S zsh
+```
+
+4.安装Oh My Zsh
+
+```
+sh -c "$(wget -qO- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+5.切换到zsh
+
+```
+chsh -s /bin/zsh
+```
+
+6.
