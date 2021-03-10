@@ -538,6 +538,7 @@ yay -S wqy-microhei-kr-patched
 
 ![image17](https://github.com/zjkhy94/Archlinux-Manjaro-zjkhy94/blob/main/images/image17.jpg)
 
+问题解决如下：
 ```
 sudo systemctl stop todeskd.service			关闭todesk服务
 cd /opt/todesk/config/todeskd.conf			进入todesk的config文件夹
